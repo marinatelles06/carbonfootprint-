@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon footprint</title>
+    <script src="carbon_footprint.js"></script>
+</head>
+<body>
+    <style>
+        
+    </style>
+    <h1><strong>Carbon Footprint</strong></h1>
+    <br>
+    <h2>Do you know what is your carbon footprint based on how much meat do you eat per day?</h2>
+    <br>
+    <br>
+    <h3>For reference, the BigMac has 150 grams of meat in it.</h3>
+    <h4>How much meat do you eat per day?</h4>
+
+    <form>
+        <input type="radio" name="diet" id="heavymeateater" value="heavy meat eater">
+        <label for="heavy_eater">>100g</label>
+        <br>
+        <input type="radio" name="meat_amount" id="mediummeateater" value="medium meat eater">
+        <label for="medium_eater">Between 50g and 99g</label>
+        <br>
+        <input type="radio" name="meat_amount" id="lowmeateater" value="low meat eater">
+        <label for="low_eater">>50g</label>
+        <br>
+        <input type="radio" name="meat_amount" id="pescatarian" value="pescatarian">
+        <label for="pescatarian">Pescatarian</label>
+        <br>
+        <input type="radio" name="meat_amount" id="vegetarian" value="vegetarian">
+        <label for="vegetarian">Vegetarian</label>
+        <br>
+        <input type="radio" name="meat_amount" id="vegan" value="vegan">
+        <label for="vegan">Vegan</label>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>document.querySelector("form").addEventListener("submit", function(e){
+        if(document.getElementById("vegan").checked == true)
+        {   
+            document.write("Based on your diet, your carbon footprint is: 2.89 kgCO2e/day");
+        }
+        else if(document.getElementById("vegetarian").checked == true)
+        {  
+            document.write("Based on your diet, your carbon footprint is: 2.89 kgCO2e/day");
+        }
+        else if(document.getElementById("pescatarian").checked == true)
+        {  
+            document.write("Based on your diet, your carbon footprint is: 3.81 kgCO2e/day");
+        }
+        else if(document.getElementById("lowmeateater").checked == true)
+        {  
+            document.write("Based on your diet, your carbon footprint is: 4.67 kgCO2e/day");
+        }
+        else if(document.getElementById("mediummeateater").checked == true)
+        {  
+            document.write("Based on your diet, your carbon footprint is: 5.63 kgCO2e/day");
+        }
+        else if(document.getElementById("heavymeateater").checked == true)
+        {  
+            document.write("Based on your diet, your carbon footprint is: 7.19 kgCO2e/day");
+        }
+    })</script>
+    <img src="https://media.gettyimages.com/photos/footprint-comprised-of-greenery-and-shrubs-picture-id157679199?s=612x612" width="800">
+    <body background="https://static.vecteezy.com/ti/vetor-gratis/p2/4558781-seamless-pattern-background-with-cow-and-cheese-vector-illustration-vetor.jpg" bgproperties="fixed">
+        </body>
+    <h5>Marina de Souza Telles Silva</h5>
+</body>
+</html>
